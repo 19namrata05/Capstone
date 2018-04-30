@@ -137,9 +137,9 @@ class Enemy2(spgl.Sprite):
 
 # Initial Game setup
 
-game = spgl.Game(800, 600, "black","Namrata capstone project", 1)
+game = spgl.Game(800, 600, "black","Namrata capstone project", 20)
 game.set_background("galaxy_stars_universe_light_planet_63624_800x600.gif")
-game.play_sound("Interstellar (Galaxies EP).mp3") 
+game.play_sound("music.wav -v 0.1") 
 
 # Create Sprites
 goal = Goal("square", "green", 340, -150)
