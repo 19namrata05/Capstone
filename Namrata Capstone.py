@@ -141,13 +141,14 @@ game = spgl.Game(800, 600, "black","Namrata capstone project", 20)
 game.set_background("galaxy_stars_universe_light_planet_63624_800x600.gif")
 game.play_sound("music.wav -v 0.1") 
 
+
 # Create Sprites
 goal = Goal("square", "green", 340, -150)
 
-goal.set_image("7-2-earth-png-pic-thumb.gif", 200, 200)
+goal.set_image("7-2-earth-png-pic-thumb.gif", 150, 150)
 
 player = Player("circle", "blue", -390, 0)
-player.set_image("Webp.net-resizeimage copy 2.gif", 79, 78)
+player.set_image("Webp.net-resizeimage copy 2.gif", 60, 60)
 
 points = []
 
@@ -204,7 +205,7 @@ while True:
 		game.tick()
 		time.sleep(5)
 		
-		exit()
+		game.exit()
 
 		
 
